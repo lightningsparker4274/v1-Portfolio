@@ -1,0 +1,496 @@
+.tml:hover {
+  margin: auto;
+  padding: 80px;
+  background-color: rgb(245, 160, 80);
+  border: 1px solid #f6f6f6;
+  border-radius: 4px;
+
+  box-shadow: 2px 3px 3px 3px rgba(255, 251, 251, 0.05)
+}
+
+
+
+
+.heading {
+  /* color: -webkit-linear-gradient(#ECC350,#FFAA77,#D62976,#962FBF,#4F5BD5); 
+   color:  -webkit-linear-gradient(#ECC350,#FFAA77,#D62976,#962FBF,#4F5BD5); ; */
+  font-size: 30px;
+  background: -webkit-linear-gradient(#ECC350, #FFAA77, #D62976, #962FBF, #4F5BD5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sheading {
+  /* color: -webkit-linear-gradient(#ECC350,#FFAA77,#D62976,#962FBF,#4F5BD5); 
+  color:  -webkit-linear-gradient(#ECC350,#FFAA77,#D62976,#962FBF,#4F5BD5); ; */
+  font-size: 24 px;
+  background: -webkit-linear-gradient(#ECC350, #FFAA77, #D62976, #962FBF, #4F5BD5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ssheading {
+  /* color: -webkit-linear-gradient(#ECC350,#FFAA77,#D62976,#962FBF,#4F5BD5); 
+  color:  -webkit-linear-gradient(#ECC350,#FFAA77,#D62976,#962FBF,#4F5BD5); ; */
+  font-size: 12px;
+  background: -webkit-linear-gradient(#ECC350, #FFAA77, #D62976, #962FBF, #4F5BD5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pheading {
+  /* color: -webkit-linear-gradient(#ECC350,#FFAA77,#D62976,#962FBF,#4F5BD5); 
+  color:  -webkit-linear-gradient(#ECC350,#FFAA77,#D62976,#962FBF,#4F5BD5); ; */
+  font-size: 25px;
+  background: -webkit-linear-gradient(#ECC350, #FFAA77, #D62976, #962FBF, #4F5BD5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #ffffff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #222222;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #833ab4;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #cd201f;
+  color: #ffffff;
+}
+
+
+* {
+  font-family: 'tilt neon';
+}
+
+body {
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+
+.wells {
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid #f6f6f6;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 2px 3px 7px 4px rgba(0, 0, 0, .05);
+}
+
+.tech:hover {
+  margin: auto;
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  padding-top: 4px;
+  background-color: white;
+  border: 1px solid #f6f6f6;
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 2px 3px 7px 4px rgba(0, 0, 0, .05);
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.82);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar {
+  opacity: 0.5;
+  background: linear-gradient(45deg, #4e5055, #202227);
+}
+
+.skill {
+  margin: auto;
+  padding: 20px;
+  /* background: linear-gradient(315deg, #ffffff, #d7e1ec); */
+
+  border: 1px solid #f6f6f6;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 2px 3px 7px 4px rgba(0, 0, 0, .05);
+}
+
+.skilll {
+  margin: auto;
+  padding: 10px;
+  /* background: linear-gradient(315deg, #ffffff, #d7e1ec); */
+
+  border: 1px solid #f6f6f6;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 2px 3px 7px 4px rgba(0, 0, 0, .05);
+}
+
+.skillll {
+  margin: auto;
+  padding: 10px;
+  /* background: linear-gradient(315deg, #ffffff, #d7e1ec); */
+
+  background: -webkit-linear-gradient(#ECC350, #FFAA77, #D62976, #962FBF, #4F5BD5);
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
+  box-shadow: 2px 3px 7px 4px rgba(0, 0, 0, .05);
+}
+
+/* .skill:hover {
+            background-color: #434445;
+            color: yellow;
+        } */
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand>h4:hover {
+  background: -webkit-linear-gradient(#ECC350, #FFAA77, #D62976, #962FBF, #4F5BD5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill:hover {
+  background: -webkit-linear-gradient(#ECC350, #FFAA77, #D62976, #962FBF, #4F5BD5);
+}
+
+.skilll:hover {
+  background: -webkit-linear-gradient(#ECC350, #FFAA77, #D62976, #962FBF, #4F5BD5);
+}
+
+.nav-item .nav-link {
+  color: white;
+}
+
+.nav-item:hover .nav-link {
+  background: -webkit-linear-gradient(#ECC350, #FFAA77, #D62976, #962FBF, #4F5BD5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+.navbar-toggler-icon:hover {
+  background-color: #2ecc71;
+}
+
+#intro {
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+#intro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  animation: animate__animated animate__heartBeat infinite 1.5s;
+}
+
+#intro p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+.container {
+  text-align: center;
+  /* Center text within container */
+}
+
+.card {
+  width: 80%;
+  height: 21.5rem;
+  /* Adjust the height as needed */
+  background-color: #000;
+  /* Black background */
+  color: #fff;
+  /* White text */
+}
+
+.overlay-image {
+  position: absolute;
+  top: 2%;
+  left: 30%;
+
+  width: 100px;
+  /* Adjust the width of the circular avatar */
+  height: 100px;
+  /* Adjust the height of the circular avatar */
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 6;
+}
+
+.card-text {
+  font-style: italic;
+}
+
+/* 
+        .active {
+            background: -webkit-linear-gradient(#ECC350, #FFAA77, #D62976, #962FBF, #4F5BD5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        } */
+
+.grad {
+  background: linear-gradient(#844E92, #CDD197, #4D2E8E, #54C0B9);
+}
+
+@media only screen and (max-width: 600px) {
+  .flip-card {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    perspective: 800px;
+    border-radius: 50px;
+    margin-left: 80px;
+  }
+
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 150px;
+  perspective: 800px;
+  border-radius: 50px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background: url("./assets/design.jpeg");
+  background-color: white;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.nav-link.active {
+  color: #FF6347;
+  /* Change color as needed */
+}
+
+.cardss {
+  line-height: 30px;
+  width: 700px;
+  height: 500px;
+  background-color: #000;
+  color: #00FF00;
+  font-family: monospace;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: auto;
+  border-radius: 10px;
+  position: relative;
+  /* Added to position the cursor */
+}
+
+.prompt p {
+  font-size: 15px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+
+@keyframes blink-animation {
+  50% {
+    opacity: 0;
+  }
+}
+
+#line3,
+#line4,
+#line7,
+#line8,
+#line11,
+#line12,
+#line15,
+#line16,
+#line17 {
+  text-indent: 50px;
+}
+
+
+.columnn {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.columnn img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.columnn img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.containerr {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
